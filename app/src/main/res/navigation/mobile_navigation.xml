@@ -23,11 +23,16 @@
 
     <fragment
         android:id="@+id/nav_scrollingart"
-        android:name="org.fll38273.galleryglider.ui.scrollingart.ScrollingArtFragment"
+        android:name="org.fll38273.galleryglider.ui.webview.ScrollingArtFragment"
         android:label="@string/menu_scrolling_art"
         tools:layout="@layout/fragment_scrollingart" >
         <action
             android:id="@+id/action_nav_scrollingart_to_nav_gallery"
             app:destination="@id/nav_gallery" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="org.fll38273.galleryglider.ui.webview.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_scrollingart" />
 </navigation>
