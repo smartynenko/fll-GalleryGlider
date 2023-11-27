@@ -41,8 +41,8 @@ public class ArtWorkGVAdapter extends ArrayAdapter<ArtWorkModel> {
         TextView courseTV = listitemView.findViewById(R.id.idTArt);
         ImageButton artworkIB = listitemView.findViewById(R.id.idBIArt);
 
-        courseTV.setText(artworkModel.getArtwork_name());
-        artworkIB.setImageResource(artworkModel.getImgid());
+        courseTV.setText(artworkModel.getArtworkName());
+        artworkIB.setImageResource(artworkModel.getImgId());
         if(artworkModel.getAssetPath() == "") {
             artworkIB.setEnabled(false);
             artworkIB.setColorFilter(Color.argb(150,200,200,200));
@@ -52,7 +52,7 @@ public class ArtWorkGVAdapter extends ArrayAdapter<ArtWorkModel> {
         artworkIB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(),artworkModel.getArtwork_name(), Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(),artworkModel.getArtworkName(), Toast.LENGTH_LONG).show();
                 viewModel.selectItem(position);
                 mGallery.activateScrollingArt();
             }

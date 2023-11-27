@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
             new ArtWorkModel("Red Hat", R.drawable.thumb_red_hat, "red_hat/red_hat.html"),
             new ArtWorkModel("Lilies", R.drawable.thumb_lilies),
-            new ArtWorkModel("Wave", R.drawable.thumb_wave),
+            new ArtWorkModel("Great Hokusai", R.drawable.thumb_wave, "great_hokusai/article.html"),
 
-            new ArtWorkModel("Ginievra de Beci", R.drawable.thumb_ginievra_de_beci),
+            new ArtWorkModel("Ginievra de Beci", R.drawable.thumb_ginievra_de_beci,"genievra_de_beci/article.html"),
             new ArtWorkModel("Colosseum", R.drawable.thumb_colosseum, "colosseum/colosseum.html"),
-            new ArtWorkModel("Taj Mahal", R.drawable.thumb_taj_mahal),
+            new ArtWorkModel("Taj Mahal", R.drawable.thumb_taj_mahal, "taj_mahal/article.html"),
 
             new ArtWorkModel("Kremlin", R.drawable.thumb_kremlin, "kremlin/kremlin.html"),
             new ArtWorkModel("American Gothic", R.drawable.thumb_american_gothic, "american_gothic/american_gothic.html"),

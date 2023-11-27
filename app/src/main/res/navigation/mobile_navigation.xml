@@ -22,12 +22,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="org.fll38273.galleryglider.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_scrollingart"
         android:name="org.fll38273.galleryglider.ui.scrollingart.ScrollingArtFragment"
         android:label="@string/menu_scrolling_art"

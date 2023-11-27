@@ -9,6 +9,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -22,7 +23,8 @@ import org.fll38273.galleryglider.MainActivity;
 import org.fll38273.galleryglider.R;
 
 public class ScrollingArtFragment extends Fragment {
-    private ArtWorkViewModel viewModel;
+    private ArtWorkViewModel mViewModel;
+    int mPosition;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -60,11 +62,36 @@ public class ScrollingArtFragment extends Fragment {
 
         //view.getSettings().setJavaScriptEnabled(true);
 
-        viewModel = new ViewModelProvider(requireActivity()).get(ArtWorkViewModel.class);
-        String asset_path = ((MainActivity) requireActivity()).getArtWorks()[viewModel.getSelectedItem().getValue().intValue()].getAssetPath();
-        webView.loadUrl("https://appassets.androidplatform.net/assets/" + asset_path);
+        mViewModel = new ViewModelProvider(requireActivity()).get(ArtWorkViewModel.class);
+        loadContent(webView);
+
+        Button btnNext = rootView.findViewById(R.id.Next);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int nextPosition = mPosition == ((MainActivity) requireActivity()).getArtWorks().length - 1 ? 0 : mPosition + 1;
+                mViewModel.selectItem(nextPosition);
+                loadContent(webView);
+            }
+        });
+
+        Button btnPrevious = rootView.findViewById(R.id.Prev);
+        btnPrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int nextPosition = mPosition == 0 ? ((MainActivity) requireActivity()).getArtWorks().length - 1 : mPosition - 1;
+                mViewModel.selectItem(nextPosition);
+                loadContent(webView);
+            }
+        });
 
         return rootView ;
+    }
+
+    private void loadContent(WebView webView) {
+        mPosition = mViewModel.getSelectedItem().getValue().intValue();
+        String asset_path = ((MainActivity) requireActivity()).getArtWorks()[mPosition].getAssetPath();
+        webView.loadUrl("https://appassets.androidplatform.net/assets/" + asset_path);
     }
 
     @Override
