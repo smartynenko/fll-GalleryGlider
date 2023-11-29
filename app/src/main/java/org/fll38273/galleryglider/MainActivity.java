@@ -95,10 +95,6 @@ public class MainActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void navigateToArtWork() {
-        Navigation.findNavController(this, R.id.nav_host_fragment_content_main).navigate(R.id.action_nav_gallery_to_nav_scrollingart);
-    }
-
     public ArtWorkModel[] getArtWorks() {
         return mArtWorks;
     }
