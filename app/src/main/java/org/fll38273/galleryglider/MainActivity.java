@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
             new ArtWorkModel("Last Supper", R.drawable.thumb_last_supper, "last_supper/article.html"),
             new ArtWorkModel("Café Terrace at Night", R.drawable.thumb_terrace, "cafe_terrace_at_night/article.html"),
-            new ArtWorkModel("Night Watch", R.drawable.thumb_night_watch),
+            new ArtWorkModel("Night Watch", R.drawable.thumb_night_watch, "night_watch/article.html"),
 
             new ArtWorkModel("Red Hat", R.drawable.thumb_red_hat, "red_hat/red_hat.html"),
-            new ArtWorkModel("Lilies", R.drawable.thumb_lilies),
+            new ArtWorkModel("Lilies", R.drawable.thumb_lilies, "water_lilies/article.html"),
             new ArtWorkModel("Great Hokusai", R.drawable.thumb_wave, "great_hokusai/article.html"),
 
             new ArtWorkModel("Ginievra de Beci", R.drawable.thumb_ginievra_de_beci,"genievra_de_beci/article.html"),
