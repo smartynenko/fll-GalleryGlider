@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             new ArtWorkModel("Taj Mahal", R.drawable.thumb_taj_mahal, "taj_mahal/article.html"),
 
             new ArtWorkModel("Lotus Temple", R.drawable.thumb_lotus, "lotus_temple/article.html"),
-            new ArtWorkModel("St.Basil's Cathedral", R.drawable.thumb_kremlin, "kremlin/kremlin.html"),
+            new ArtWorkModel("St.Basil's Cathedral", R.drawable.thumb_st_basil, "st_basil/article.html"),
             new ArtWorkModel("American Gothic", R.drawable.thumb_american_gothic, "american_gothic/american_gothic.html"),
 
             new ArtWorkModel("Composition VIII", R.drawable.thumb_composition_viii, "composition_viii/composition_viii.html"),
