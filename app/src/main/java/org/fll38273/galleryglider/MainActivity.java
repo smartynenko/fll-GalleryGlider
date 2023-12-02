@@ -31,16 +31,16 @@ public class MainActivity extends AppCompatActivity {
             new ArtWorkModel("Café Terrace at Night", R.drawable.thumb_terrace, "cafe_terrace_at_night/article.html"),
             new ArtWorkModel("Night Watch", R.drawable.thumb_night_watch, "night_watch/article.html"),
 
-            new ArtWorkModel("Red Hat", R.drawable.thumb_red_hat, "red_hat/red_hat.html"),
+            new ArtWorkModel("Girl with a Red Hat", R.drawable.thumb_red_hat, "red_hat/red_hat.html"),
             new ArtWorkModel("Water Lilies", R.drawable.thumb_lilies, "water_lilies/article.html"),
-            new ArtWorkModel("Great Hokusai", R.drawable.thumb_wave, "great_hokusai/article.html"),
+            new ArtWorkModel("Great Wave of Kanagawa", R.drawable.thumb_wave, "great_hokusai/article.html"),
 
             new ArtWorkModel("Ginievra de Beci", R.drawable.thumb_ginievra_de_beci,"genievra_de_beci/article.html"),
             new ArtWorkModel("Colosseum", R.drawable.thumb_colosseum, "colosseum/colosseum.html"),
             new ArtWorkModel("Taj Mahal", R.drawable.thumb_taj_mahal, "taj_mahal/article.html"),
 
             new ArtWorkModel("Lotus Temple", R.drawable.thumb_lotus, "lotus_temple/article.html"),
-            new ArtWorkModel("Kremlin", R.drawable.thumb_kremlin, "kremlin/kremlin.html"),
+            new ArtWorkModel("St.Basil's Cathedral", R.drawable.thumb_kremlin, "kremlin/kremlin.html"),
             new ArtWorkModel("American Gothic", R.drawable.thumb_american_gothic, "american_gothic/american_gothic.html"),
 
             new ArtWorkModel("Composition VIII", R.drawable.thumb_composition_viii, "composition_viii/composition_viii.html"),
