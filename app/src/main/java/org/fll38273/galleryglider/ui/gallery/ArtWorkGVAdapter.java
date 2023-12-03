@@ -22,8 +22,8 @@ public class ArtWorkGVAdapter extends ArrayAdapter<ArtWorkModel> {
 
     private GalleryFragment mGallery;
     private ArtWorkViewModel viewModel;
-    public ArtWorkGVAdapter(@NonNull Context context, GalleryFragment gallery, ArtWorkModel[] courseModelArrayList) {
-        super(context, 0, courseModelArrayList);
+    public ArtWorkGVAdapter(@NonNull Context context, GalleryFragment gallery, ArtWorkModel[] artWorkModels) {
+        super(context, 0, artWorkModels);
         mGallery = gallery;
     }
 

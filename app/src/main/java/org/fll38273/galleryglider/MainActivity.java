@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
-    private NavController mNavController;
-
     private ArtWorkModel[] mArtWorks = {
             new ArtWorkModel("Mona Lisa", R.drawable.thumb_mona_lisa, "mona_lisa/article.html"),
             new ArtWorkModel("Starry Night", R.drawable.thumb_starry_night, "starry_night/starry_night.html"),

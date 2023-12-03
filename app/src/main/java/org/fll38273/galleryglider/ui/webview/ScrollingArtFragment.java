@@ -31,8 +31,7 @@ public class ScrollingArtFragment extends WebViewFragment {
             @Override
             public void onClick(View v) {
                 int nextPosition = mPosition == ((MainActivity) requireActivity()).getArtWorks().length - 1 ? 0 : mPosition + 1;
-                mViewModel.selectItem(nextPosition);
-                loadContent();
+                refreshContent(nextPosition);
             }
         });
 
@@ -41,12 +40,16 @@ public class ScrollingArtFragment extends WebViewFragment {
             @Override
             public void onClick(View v) {
                 int nextPosition = mPosition == 0 ? ((MainActivity) requireActivity()).getArtWorks().length - 1 : mPosition - 1;
-                mViewModel.selectItem(nextPosition);
-                loadContent();
+                refreshContent(nextPosition);
             }
         });
 
         return rootView ;
+    }
+
+    private void refreshContent(int nextPosition) {
+        mViewModel.selectItem(nextPosition);
+        loadContent();
     }
 
     private void loadContent() {
