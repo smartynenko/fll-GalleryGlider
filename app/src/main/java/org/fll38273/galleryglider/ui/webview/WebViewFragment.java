@@ -38,9 +38,9 @@ public class WebViewFragment extends Fragment {
 
         WebSettings webViewSettings = mWebView.getSettings();
         // Setting this off for security. Off by default for SDK versions >= 16.
-        webViewSettings.setAllowFileAccessFromFileURLs(false);
+        // webViewSettings.setAllowFileAccessFromFileURLs(false);
         // Off by default, deprecated for SDK versions >= 30.
-        webViewSettings.setAllowUniversalAccessFromFileURLs(false);
+        // webViewSettings.setAllowUniversalAccessFromFileURLs(false);
         // Keeping these off is less critical but still a good idea, especially if your app is not
         // using file:// or content:// URLs.
         webViewSettings.setAllowFileAccess(false);
