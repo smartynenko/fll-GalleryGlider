@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             new ArtWorkModel("Composition VIII", R.drawable.thumb_composition_viii, "composition_viii/composition_viii.html"),
             new ArtWorkModel("Three Puppies", R.drawable.thumb_still_life_with_three_puppies, "still_life_w_3_puppies/article.html"),
+            new ArtWorkModel("The Kiss", R.drawable.thumb_kiss, "kiss/article.html"),
     };
 
     private ArtWorkViewModel viewModel;
